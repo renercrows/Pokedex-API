@@ -1,13 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=sans:ital,wght@0,100;0,200;1,100;1,400&family=Montserrat:wght@400;800&family=Roboto+Slab:wght@100;200&family=Silkscreen:wght@400;700&display=swap');
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(123, 25, 25);
+  color: #fff;
+  width: 100%;
+  font-family: 'Lato', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.main-continer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  font-size: 1rem;
+  margin-left: 1.5rem;
+  margin-top: 0.3rem;
+  margin-bottom: 3rem;
+}
+
+.home-btn {
+  width: 40px;
+}
+
+.nav-title {
+  width: 100%;
+  display: flex;
+  margin: 0;
+  justify-content: center;
+}
+
+.poke {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #f2913d;
+  width: 100%;
+  height: 1rem;
+  padding-bottom: 5rem;
+  gap: 2rem;
+  padding-top: 4rem;
+}
+
+.poke-img {
+  width: 10rem;
+  height: 10rem;
+  max-width: 15rem;
+  border-radius: 5%;
+  margin-left: 0.3rem;
+  image-rendering: auto;
+}
+
+.single-name {
+  max-width: 40rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.middle-bar {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  margin-left: 0.5rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.search {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.search-bar {
+  height: 1rem;
+  width: 10rem;
+  font-size: 1rem;
+  border-radius: 40px;
+  padding-left: 1rem;
+}
+
+.search-ball {
+  width: 2rem;
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: left;
+  margin-left: 1.5rem;
+}
+
+.poke-data:nth-child(1),
+.poke-data:nth-child(4),
+.poke-data:nth-child(5),
+.poke-data:nth-child(8),
+.poke-data:nth-child(9),
+.poke-data:nth-child(12),
+.poke-data:nth-child(13),
+.poke-data:nth-child(16),
+.poke-data:nth-child(17),
+.poke-data:nth-child(20),
+.poke-data:nth-child(2),
+.poke-data:nth-child(3),
+.poke-data:nth-child(6),
+.poke-data:nth-child(7),
+.poke-data:nth-child(10),
+.poke-data:nth-child(11),
+.poke-data:nth-child(14),
+.poke-data:nth-child(15),
+.poke-data:nth-child(18),
+.poke-data:nth-child(19) {
+  display: flex;
+  width: 25rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  height: 13rem;
+  background-color: #f2913d;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.poke-data:hover {
+  box-shadow: inset 0 0 0 3px #f27b35;
+}
+
+.poke-btn {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.3rem;
+}
+
+/* cards */
+
+.single-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-number {
+  color: white;
+  font-size: 1.5rem;
+  margin: 0;
+  align-self: end;
+  padding-right: 1rem;
+}
+
+.single-card-img {
+  width: 8rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+
+.card-name {
+  color: white;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  margin-top: 0.4rem;
+  align-items: center;
+}
+
+/* Description */
+.pokemon-data {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 2rem;
+}
+
+.pokemon-subtitle {
+  margin-top: 0.1rem;
+}
+
+.pokemon-name {
+  color: white;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  margin-top: 0.4rem;
+}
+
+.pokemon {
+  max-height: 20rem;
+  max-width: 20rem;
+}
+
+.pokemon-types {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+  list-style: none;
+}
+
+.list-description {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.li-description:nth-child(odd) {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: #f2913d;
+}
+
+.li-description:nth-child(even) {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.habilities {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-weight: bold;
+  gap: 1rem;
+  width: 100%;
+  font-size: 1.3rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-top: 1rem;
+  align-items: center;
+  background-color: #f2913d;
+  list-style: none;
+}
+
+.animation {
+  width: 7rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.moves {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+
+.moves-list {
+  display: flex;
+  justify-content: left;
+  margin-left: 9rem;
+  list-style: none;
+  flex-wrap: wrap;
+  gap: 9rem;
+  width: 70rem;
+  margin-bottom: 4rem;
+  margin-top: 2rem;
+}
+
+.move:nth-child(odd) {
+  font-weight: bold;
+  background-color: #f2913d;
+  width: 10%;
+  list-style: none;
+}
+
+.move:nth-child(even) {
+  font-weight: bold;
+}
+
+@media (min-width: 600px) {
+  .single-name {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: 'Silkscreen', cursive;
+    text-shadow: black 3px 3px;
+    margin-left: 2rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .single-name {
+    font-size: 6rem;
+    font-weight: bold;
+    font-family: 'Silkscreen', cursive;
+    text-shadow: black 3px 3px;
+    margin-left: 2rem;
+  }
+}
+
+footer {
+  width: 100%;
+  padding-right: 3rem;
+  background-color: #f2913d;
+  margin-top: 1rem;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  height: 4rem;
+  width: 100%;
+}
+
+.footer-text {
+  color: white;
+  font-size: 1.5rem;
 }
