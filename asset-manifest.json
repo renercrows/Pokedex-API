@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Capstone3/static/css/main.8eb804a0.css",
+    "main.js": "/Capstone3/static/js/main.614b575b.js",
+    "static/media/pikachu.png": "/Capstone3/static/media/pikachu.e50c0c448f99e9ab1836.png",
+    "static/media/pokeball.png": "/Capstone3/static/media/pokeball.e50c0c448f99e9ab1836.png",
+    "index.html": "/Capstone3/index.html",
+    "main.8eb804a0.css.map": "/Capstone3/static/css/main.8eb804a0.css.map",
+    "main.614b575b.js.map": "/Capstone3/static/js/main.614b575b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8eb804a0.css",
+    "static/js/main.614b575b.js"
+  ]
+}
