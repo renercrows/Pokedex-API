@@ -11,7 +11,6 @@ function DisplayPokemons() {
   useEffect(() => {
     if (!pokemons.length) dispatch(fetchApi());
   });
-  // console.log(pokemons);
   return (
     <div>
       <ul className="list">
