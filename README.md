@@ -39,7 +39,6 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Nelson Sakwa, original owner of the design.
 - Miroverse Inc.
 
 
