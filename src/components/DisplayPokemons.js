@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchApi } from '../redux/pokemons/Pokemons';
-import SingleCard from './SingleCard';
+import { SingleCard } from './SingleCard';
 
 function DisplayPokemons() {
   const pokemons = useSelector((state) => state.preview);

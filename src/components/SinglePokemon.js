@@ -1,18 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
 import pokeball100 from '../images/pokeball-100.png';
 
 function SinglePokemons() {
-  const [img, setImg] = useState(pokeball100);
+  const [img] = useState(pokeball100);
 
   useEffect(() => {
-    async function fetchData() {
-      const random = Math.floor(Math.random() * 150) + 1;
-      const response = await axios.get(`https://pokeapi.co/api/v2/pokemon/${random}`);
-      setImg(response.data.sprites.versions.animated.front_default);
-    }
-    fetchData();
-  }, []);
+    window.scrollTo(20, 0);
+  });
 
   return (
     <div className="poke">

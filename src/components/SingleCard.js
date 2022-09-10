@@ -1,17 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import axios from 'axios';
-import pokeball from '../images/pokeball.png';
 
-function SingleCard({ pokemon }) {
-  const [img, setImg] = useState(pokeball);
+export function SingleCard({ pokemon }) {
+  const [img, setImg] = useState([]);
 
   useEffect(() => {
-    async function fetchData() {
+    async function fetchImg() {
       const response = await axios.get(`https://pokeapi.co/api/v2/pokemon/${pokemon.id}`);
       setImg(response.data.sprites.other['official-artwork'].front_default);
     }
-    fetchData();
+    fetchImg();
   });
 
   return (
@@ -35,4 +34,4 @@ SingleCard.propTypes = {
   }).isRequired,
 };
 
-export default SingleCard;
+export default useEffect.reducer;
