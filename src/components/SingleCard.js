@@ -5,9 +5,11 @@ import axios from 'axios';
 export function SingleCard({ pokemon }) {
   const [img, setImg] = useState([]);
 
+  const url = `https://pokeapi.co/api/v2/pokemon/${pokemon.id}`;
+
   useEffect(() => {
     async function fetchImg() {
-      const response = await axios.get(`https://pokeapi.co/api/v2/pokemon/${pokemon.id}`);
+      const response = await axios.get(url);
       setImg(response.data.sprites.other['official-artwork'].front_default);
     }
     fetchImg();
@@ -34,4 +36,4 @@ SingleCard.propTypes = {
   }).isRequired,
 };
 
-export default useEffect.reducer;
+export default SingleCard.reducer;
