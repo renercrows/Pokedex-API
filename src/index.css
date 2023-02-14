@@ -36,7 +36,7 @@ nav {
   width: 100%;
   display: flex;
   margin: 0;
-  justify-content: center;
+  justify-content: center;  
 }
 
 .poke {
@@ -94,6 +94,7 @@ nav {
 
 .search-ball {
   width: 2rem;
+  list-style: none;
 }
 
 .list {
